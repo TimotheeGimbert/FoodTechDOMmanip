@@ -25,11 +25,26 @@ header a {
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
   margin-top: 60px;
 }
 
 main img {
   height: 600px;
+}
+
+main div.menu {
+  transition: all;
+  transition-duration: 500ms;
+  visibility: hidden;
+  width: 0px;
+  margin-right: 6%;
+}
+.menu h2 {
+  margin-top: 60px;
+}
+.menu section {
+  margin: 110px 60px;
 }

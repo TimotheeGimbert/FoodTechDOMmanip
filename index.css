@@ -22,7 +22,7 @@ header a {
   color: rgba(58, 52, 52, 0.849);
   background-color: rgba(97, 190, 5, 0.342);
 }
-header:hover {
+header a:hover {
   cursor: pointer;
 }
 

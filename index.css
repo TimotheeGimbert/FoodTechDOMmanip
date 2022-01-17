@@ -24,14 +24,17 @@ header a {
   padding: 11px 22px;
   text-decoration: none;
   color: rgba(58, 52, 52, 0.849);
-
+  border-radius: 30px;
 }
 header a:hover {
   background-color: rgba(97, 190, 5, 0.342);
   cursor: pointer;
+  
+}
+header #menuTab:hover {
   transition: all;
-  transition-duration: 300ms;
-  padding: 11px 44px;
+  transition-duration: 1000ms;
+  padding: 11px 88px;
 }
 
 main {
@@ -46,12 +49,18 @@ main img {
   height: 600px;
 }
 
-main div.menu {
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   transition: all;
   transition-duration: 500ms;
   visibility: hidden;
   width: 0px;
   margin-right: 6%;
+  background-color: rgba(247, 241, 217, 0.623);
+  border-radius: 110px;
 }
 .menu h2 {
   margin-top: 60px;
@@ -59,12 +68,27 @@ main div.menu {
 .menu section {
   margin: 110px 60px;
 }
-
+.menu button {
+  background-color: rgba(97, 190, 5, 0.342);
+  color: rgba(58, 52, 52, 0.849);
+  padding: 11px 44px;
+  margin-bottom: 110px;
+  border-radius: 60px;
+  border: 1px solid rgba(247, 241, 217, 0.623);
+}
+.menu button:hover {
+  background-color: rgba(250, 250, 250, 0.89);
+  cursor: pointer;
+  transition: all;
+  transition-duration: 600ms;
+  padding: 11px 88px;
+  border-color: rgba(58, 52, 52, 0.849);
+  border-radius: 220px;
+}
 
 #popup {
   display: none;
 }
-
 .popup__wrapper {
   background: rgba(0, 0, 0, .75);
   position: fixed;
@@ -74,7 +98,6 @@ main div.menu {
   right: 0;
   z-index: 10;
 }
-
 .popup__container {
   background: #fff;
   font-family: Helvetica, Arial, sans-serif;
@@ -84,7 +107,6 @@ main div.menu {
   padding: 40px;
   width: 800px;
 }
-
 .popup__title {
   font-size: 26px;
   margin-bottom: 15px;

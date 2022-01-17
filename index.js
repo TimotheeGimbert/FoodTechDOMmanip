@@ -22,3 +22,26 @@ changeMenuButton.addEventListener('click', () => {
   document.querySelector('.menu section').innerHTML = newMenu; 
 });
 
+
+function onMouseOut(event) {
+  // If the mouse is near the top of the window, show the popup
+  // Also, do NOT trigger when hovering or clicking on selects
+  if (
+    event.clientY < 25 &&
+    event.relatedTarget == null &&
+    event.target.nodeName.toLowerCase() !== 'select') {
+    // Remove this event listener
+    document.removeEventListener("mouseout", onMouseOut);
+
+    // Show the popup
+    document.getElementById("popup").style.display = "block";
+    popupActive = true;
+
+    document.addEventListener('click', () => {
+      document.getElementById('popup').style.display = 'none';
+    });
+  }
+}
+
+document.addEventListener("mouseout", onMouseOut);
+

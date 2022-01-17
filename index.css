@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   height: 100%;       
   margin: 0;        
@@ -50,4 +54,34 @@ main div.menu {
 }
 .menu section {
   margin: 110px 60px;
+}
+
+
+#popup {
+  display: none;
+}
+
+.popup__wrapper {
+  background: rgba(0, 0, 0, .75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.popup__container {
+  background: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin: 300px auto;
+  max-width: 100%;
+  padding: 40px;
+  width: 800px;
+}
+
+.popup__title {
+  font-size: 26px;
+  margin-bottom: 15px;
 }

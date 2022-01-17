@@ -24,10 +24,14 @@ header a {
   padding: 11px 22px;
   text-decoration: none;
   color: rgba(58, 52, 52, 0.849);
-  background-color: rgba(97, 190, 5, 0.342);
+
 }
 header a:hover {
+  background-color: rgba(97, 190, 5, 0.342);
   cursor: pointer;
+  transition: all;
+  transition-duration: 300ms;
+  padding: 11px 44px;
 }
 
 main {

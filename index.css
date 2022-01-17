@@ -1,4 +1,7 @@
 body {
+  height: 100%;       
+  margin: 0;        
+  padding: 0;  
   background-color: rgba(255, 255, 255, 0.849);
 }
 
@@ -18,4 +21,15 @@ header a {
   text-decoration: none;
   color: rgba(58, 52, 52, 0.849);
   background-color: rgba(97, 190, 5, 0.342);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 60px;
+}
+
+main img {
+  height: 600px;
 }

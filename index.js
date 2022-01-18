@@ -43,10 +43,3 @@ function onMouseOut(event) {
   }
 }
 document.addEventListener("mouseout", onMouseOut);
-
-const galeryButton = document.querySelector('#right a');
-galeryButton.addEventListener('click', () => {
-  const galery = document.createElement('div');
-  console.log(galery);
-  document.getElementsByTagName('main').innerHTML = galery;
-});

@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+a, button {
+  transition: all;
+  transition-duration: 1000ms;
+}
+
 body {
   height: 100%;       
   margin: 0;        
@@ -10,16 +15,24 @@ body {
 }
 
 header {
-  background-color: rgba(232, 248, 232, 0.849);
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  gap: 30px;
-  padding: 30px;
+  justify-content: space-between;
+  background-color: rgba(232, 248, 232, 0.849);
+  padding: 0px 30px;
 }
-
+header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header #logo {
+  margin-right: 40px;
+  border: 10px solid rgb(248, 248, 248);
+  padding: 11px;
+}
 header a {
-  border: 3px solid rgba(0, 128, 0, 0.247);
+  border: 2px solid rgba(0, 128, 0, 0.247);
   margin: 15px;
   padding: 11px 22px;
   text-decoration: none;
@@ -29,12 +42,8 @@ header a {
 header a:hover {
   background-color: rgba(97, 190, 5, 0.342);
   cursor: pointer;
-  
-}
-header #menuTab:hover {
-  transition: all;
-  transition-duration: 1000ms;
-  padding: 11px 88px;
+  border: 3px solid rgb(248, 248, 248);
+  padding: 11px 66px;
 }
 
 main {
@@ -42,10 +51,11 @@ main {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  margin-top: 60px;
+  padding-top: 40px;
 }
 
 main img {
+  margin-top: 40px;
   height: 600px;
 }
 
@@ -55,7 +65,7 @@ main img {
   justify-content: space-between;
   align-items: center;
   transition: all;
-  transition-duration: 500ms;
+  transition-duration: 1300ms;
   visibility: hidden;
   width: 0px;
   margin-right: 6%;
@@ -63,7 +73,7 @@ main img {
   border-radius: 110px;
 }
 .menu h2 {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 .menu section {
   margin: 110px 60px;

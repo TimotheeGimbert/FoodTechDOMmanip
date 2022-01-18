@@ -12,6 +12,7 @@ menuTab.addEventListener('click', () => {
   const menuDiv = document.getElementsByClassName('menu')[0];
   menuDiv.style.visibility = 'visible';
   menuDiv.style.width = '500px';
+  document.getElementById('menuTab').style.display = 'none';
 });
 
 const changeMenuButton = document.querySelector('.menu button');
@@ -41,6 +42,11 @@ function onMouseOut(event) {
     });
   }
 }
-
 document.addEventListener("mouseout", onMouseOut);
 
+const galeryButton = document.querySelector('#right a');
+galeryButton.addEventListener('click', () => {
+  const galery = document.createElement('div');
+  console.log(galery);
+  document.getElementsByTagName('main').innerHTML = galery;
+});
